@@ -30,7 +30,7 @@ chmod +x create-chatwoot-volumes.sh
 ### Opción 2: Desde GitHub
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/tu-usuario/chatwoot-volumes/main/create-chatwoot-volumes.sh)
+bash <(curl -s https://raw.githubusercontent.com/tendenciadigitalio/chatwoot-volumes/main/create-chatwoot-volumes.sh)
 ```
 
 > Reemplaza `tu-usuario` por tu nombre real de usuario en GitHub.
