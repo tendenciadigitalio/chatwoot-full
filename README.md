@@ -1,14 +1,18 @@
-# Chatwoot Full Installer + Post Setup
+# Instalador único de Chatwoot - Tipo Orion
 
-Este script:
-- Pide los datos del cliente
-- Genera el archivo YAML del stack
-- Lo sube automáticamente a Portainer (URL fija)
-- Ejecuta migraciones (`db:prepare`) y opcionalmente `db:seed` en el contenedor principal
+Este script genera una instancia de Chatwoot para cada cliente.
 
-## Uso desde el servidor:
+## ¿Qué hace?
+
+- Pide datos del cliente
+- Crea el archivo `docker stack` personalizado
+- Despliega el stack usando Docker Swarm
+- Ejecuta `rails db:prepare` para preparar la base de datos
+
+## Uso
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/tendenciadigitalio/chatwoot-full/main/chatwoot-full.sh)
 ```
 
+Asegúrate de tener Docker Swarm y Traefik configurados previamente.
